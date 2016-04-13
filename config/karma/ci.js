@@ -83,6 +83,7 @@ module.exports = function( config ) {
 		rollupPreprocessor: {
 			rollup: {
 				plugins: [
+					require( 'rollup-plugin-mockr' )( require( '../mockr/default' ) ),
 					require( 'rollup-plugin-commonjs' )(),
 					require( 'rollup-plugin-node-resolve' )()
 				]
