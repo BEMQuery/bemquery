@@ -1,0 +1,16 @@
+{
+	"opts": {
+		"template": "./node_modules/ink-docstrap/template",
+		"encoding": "utf8",
+		"destination": "./docs/dist",
+		"recurse": true,
+		"tutorials": "./docs/tutorials",
+		"readme": "./README.md"
+	},
+	"templates": {
+		"systemName": "bemquery-package-boilerplate",
+		"copyright": "Copyright © 2016 by <a href=\"https://github.com/BEMQuery\">BEMQUery</a>",
+		"theme": "cerulean",
+		"inverseNav": true
+	}
+}

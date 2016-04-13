@@ -1,0 +1,72 @@
+{
+  "name": "bemquery-package-boilerplate",
+  "version": "0.0.0",
+  "description": "BEM selector engine",
+  "main": "dist/bemquery-package-boilerplate.umd.js",
+  "jsnext:main": "dist/bemquery-package-boilerplate.js",
+  "scripts": {
+    "karma": "karma",
+    "lint": "eslint -c config/eslint/default.json src/**/*.js tests/**/*.js",
+    "pretest": "npm run lint",
+    "test": "karma start config/karma/default.js",
+    "pretest-ci": "npm run pretest",
+    "test-ci": "karma start config/karma/ci.js",
+    "prebuild": "npm test",
+    "minify": "uglifyjs ./dist/bemquery-package-boilerplate.es5.js -o ./dist/bemquery-package-boilerplate.es5.js --comments=/^/*!/ --source-map=./dist/bemquery-package-boilerplate.es5.js.map",
+    "build": "rollup -c config/rollup/umd.js && rollup -c config/rollup/es6.js && rollup -c config/rollup/es5.js && npm run minify",
+    "build-docs": "jsdoc -c config/jsdoc/default.json ./src",
+    "publish-docs": "npm run build-docs && git checkout gh-pages && ncp docs/dist ./ && git add -A && git commit -m \"[ci skip] Updated docs.\" && git push origin gh-pages && git checkout master",
+    "preversion": "npm test",
+    "postversion": "git push origin && git push origin --tags",
+    "prepublish": "in-publish && npm run build || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BEMQuery/bemquery-package-boilerplate.git"
+  },
+  "keywords": [
+    "BEM",
+    "selector",
+    "engine"
+  ],
+  "files": [
+    "dist",
+    "tonic-example.js"
+  ],
+  "author": "Comandeer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BEMQuery/bemquery-package-boilerplate/issues"
+  },
+  "homepage": "https://github.com/BEMQuery/bemquery-package-boilerplate#readme",
+  "tonicExampleFilename": "tonic-example.js",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "chai": "^3.5.0",
+    "eslint": "^2.4.0",
+    "in-publish": "^2.0.0",
+    "ink-docstrap": "^1.1.4",
+    "jsdoc": "^3.4.0",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.5",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-fixture": "^0.2.6",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-json-fixtures-preprocessor": "0.0.6",
+    "karma-mocha": "^0.2.2",
+    "karma-rollup-preprocessor": "^2.0.1",
+    "karma-sinon-chai": "^1.2.0",
+    "lolex": "^1.4.0",
+    "mocha": "^2.4.5",
+    "ncp": "^2.0.0",
+    "rollup": "^0.25.4",
+    "rollup-plugin-babel": "^2.4.0",
+    "rollup-plugin-commonjs": "^2.2.1",
+    "rollup-plugin-mockr": "^1.0.0",
+    "rollup-plugin-node-resolve": "^1.5.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0",
+    "uglify-js": "^2.6.2"
+  }
+}

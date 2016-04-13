@@ -1,0 +1,10 @@
+addons:
+  firefox: latest
+language: node_js
+node_js:
+  - '4.4'
+  - '5.10'
+before_script:
+  - 'sh -e /etc/init.d/xvfb start'
+  - 'export DISPLAY=:99.0'
+script: npm run test-ci
