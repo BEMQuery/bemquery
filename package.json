@@ -5,7 +5,6 @@
   "main": "dist/bemquery-package-boilerplate.umd.js",
   "jsnext:main": "dist/bemquery-package-boilerplate.js",
   "scripts": {
-    "karma": "karma",
     "lint": "eslint -c config/eslint/default.json src/**/*.js tests/**/*.js",
     "pretest": "npm run lint",
     "test": "karma start config/karma/default.js",
