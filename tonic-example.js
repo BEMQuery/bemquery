@@ -1,11 +1,16 @@
-require( 'bemquery-package-boilerplate/package.json' );
+require( 'bemquery-selector-engine/package.json' );
 
 var fs = require( 'fs' ),
-	url = 'https://tonicdev.io' + process.env.TONIC_ENDPOINT_PATH;
+    url = require( 'url' ),
+	endpoint = 'https://tonicdev.io' + process.env.TONIC_ENDPOINT_PATH;
 
 exports.tonicEndpoint = function( request, response ) {
-	response.end( fs.readFileSync( require.resolve( 'bemquery-package-boilerplate' ) ) );
+    const package = url.parse( request.url, true ).query.package;
+    
+	response.end( fs.readFileSync( require.resolve( 'bemquery-' + package ) ) );
 };
+
+
 
 `<!DOCTYPE html>
 	<html lang="en">
@@ -16,7 +21,7 @@ exports.tonicEndpoint = function( request, response ) {
 		<body>
 			<p>Example</p>
 			
-			<script src="${url}"></script>
+            <script src="${endpoint}?package="></script>
 			<script>
 
 			</script>
