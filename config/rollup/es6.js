@@ -7,7 +7,13 @@ export default {
 	entry: 'src/index.js',
 	format: 'es6',
 	sourceMap: true,
-	plugins: [ nodeResolve(), convertCJS() ],
+	plugins: [
+		nodeResolve( {
+			jsnext: true,
+			main: false
+		} ),
+		convertCJS()
+	],
 	banner: `/*! BEMQuery v${packageInfo.version} | (c) ${new Date().getFullYear()} BEMQuery | MIT license (see LICENSE) */`,
 	dest: 'dist/bemquery.js'
 };
