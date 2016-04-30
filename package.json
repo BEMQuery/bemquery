@@ -66,5 +66,11 @@
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "uglify-js": "^2.6.2"
+  },
+  "dependencies": {
+    "bemquery-async-dom": "0.0.1",
+    "bemquery-core": "0.0.2",
+    "bemquery-dom-events": "0.0.1",
+    "bemquery-selector-engine": "^0.1.0"
   }
 }
