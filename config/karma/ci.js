@@ -85,7 +85,10 @@ module.exports = function( config ) {
 				plugins: [
 					require( 'rollup-plugin-mockr' )( require( '../mockr/default' ) ),
 					require( 'rollup-plugin-commonjs' )(),
-					require( 'rollup-plugin-node-resolve' )()
+					require( 'rollup-plugin-node-resolve' )( {
+						jsnext: true,
+						main: false
+					} )
 				]
 			},
 			bundle: {
