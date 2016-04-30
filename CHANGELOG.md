@@ -1,4 +1,4 @@
-# bemquery-package-boilerplate Changelog
+# bemquery Changelog
 
 ---
 

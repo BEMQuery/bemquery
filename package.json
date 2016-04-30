@@ -1,9 +1,9 @@
 {
-  "name": "bemquery-package-boilerplate",
+  "name": "bemquery",
   "version": "0.0.0",
-  "description": "BEM selector engine",
-  "main": "dist/bemquery-package-boilerplate.umd.js",
-  "jsnext:main": "dist/bemquery-package-boilerplate.js",
+  "description": "BEMQuery library",
+  "main": "dist/bemquery.umd.js",
+  "jsnext:main": "dist/bemquery.js",
   "scripts": {
     "lint": "eslint -c config/eslint/default.json src/**/*.js tests/**/*.js",
     "pretest": "npm run lint",
@@ -11,7 +11,7 @@
     "pretest-ci": "npm run pretest",
     "test-ci": "karma start config/karma/ci.js",
     "prebuild": "npm test",
-    "minify": "uglifyjs ./dist/bemquery-package-boilerplate.es5.js -o ./dist/bemquery-package-boilerplate.es5.js --comments=/^/*!/ --source-map=./dist/bemquery-package-boilerplate.es5.js.map",
+    "minify": "uglifyjs ./dist/bemquery.es5.js -o ./dist/bemquery.es5.js --comments=/^/*!/ --source-map=./dist/bemquery.es5.js.map",
     "build": "rollup -c config/rollup/umd.js && rollup -c config/rollup/es6.js && rollup -c config/rollup/es5.js && npm run minify",
     "build-docs": "jsdoc -c config/jsdoc/default.json ./src",
     "publish-docs": "npm run build-docs && git checkout gh-pages && ncp docs/dist ./ && git add -A && git commit -m \"[ci skip] Updated docs.\" && git push origin gh-pages && git checkout master",
@@ -21,12 +21,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BEMQuery/bemquery-package-boilerplate.git"
+    "url": "git+https://github.com/BEMQuery/bemquery.git"
   },
   "keywords": [
     "BEM",
-    "selector",
-    "engine"
+    "BEMQuery"
   ],
   "files": [
     "dist",
@@ -35,9 +34,9 @@
   "author": "Comandeer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BEMQuery/bemquery-package-boilerplate/issues"
+    "url": "https://github.com/BEMQuery/bemquery/issues"
   },
-  "homepage": "https://github.com/BEMQuery/bemquery-package-boilerplate#readme",
+  "homepage": "https://github.com/BEMQuery/bemquery#readme",
   "tonicExampleFilename": "tonic-example.js",
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
