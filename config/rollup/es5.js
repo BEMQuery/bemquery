@@ -1,12 +1,19 @@
 import config from './umd.js';
 import babel from 'rollup-plugin-babel';
+import uglify from 'rollup-plugin-uglify';
+
+const packageInfo = require( '../../package.json' );
 
 config.plugins.push( babel( {
-	presets: [ 
+	presets: [
 		'es2015-rollup'
 	]
 } ) );
+config.plugins.push( uglify( {
+	comments: '/^/*!/',
+	'source-map': './dist/bemquery-package-boilerplate.es5.js.map'
+} ) );
 
-config.dest = 'dist/bemquery-package-boilerplate.es5.js';
+config.dest = `dist/${packageInfo.name}.es5.js`;
 
 export default config;

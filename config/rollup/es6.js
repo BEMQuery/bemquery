@@ -8,6 +8,6 @@ export default {
 	format: 'es6',
 	sourceMap: true,
 	plugins: [ nodeResolve(), convertCJS() ],
-	banner: `/*! BEMQuery v${packageInfo.version} | (c) ${new Date().getFullYear()} BEMQuery | MIT license (see LICENSE) */`,
-	dest: 'dist/bemquery-package-boilerplate.js'
+	banner: `/*! ${packageInfo.name} v${packageInfo.version} | (c) ${new Date().getFullYear()} ${packageInfo.author.name} | ${packageInfo.license} license (see LICENSE) */`,
+	dest: `dist/${packageInfo.name}.js`
 };
