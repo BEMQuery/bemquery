@@ -7,7 +7,13 @@ export default {
 	entry: 'src/index.js',
 	format: 'es6',
 	sourceMap: true,
-	plugins: [ nodeResolve(), convertCJS() ],
+	plugins: [
+		nodeResolve( {
+			jsnext: true,
+			main: false
+		} ),
+		convertCJS()
+	],
 	banner: `/*! ${packageInfo.name} v${packageInfo.version} | (c) ${new Date().getFullYear()} ${packageInfo.author.name} | ${packageInfo.license} license (see LICENSE) */`,
 	dest: `dist/${packageInfo.name}.js`
 };
