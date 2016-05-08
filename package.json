@@ -42,7 +42,7 @@
     "babel-preset-es2015-rollup": "^1.1.1",
     "bemquery-async-dom": "0.0.1",
     "bemquery-core": "0.0.2",
-    "bemquery-dom-events": "0.0.1",
+    "bemquery-dom-events": "0.1.0",
     "bemquery-selector-engine": "^0.1.0",
     "chai": "^3.5.0",
     "eslint": "^2.9.0",
