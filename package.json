@@ -30,10 +30,7 @@
     "dist",
     "tonic-example.js"
   ],
-  "author": {
-    "name": "BEMQuery team",
-    "url": "https://github.com/BEMQuery"
-  },
+  "author": "Comandeer",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BEMQuery/bemquery/issues"
@@ -46,7 +43,7 @@
     "bemquery-core": "0.0.2",
     "bemquery-dom-events": "0.0.1",
     "bemquery-selector-converter": "^0.1.1",
-    "bemquery-selector-engine": "^0.1.0",
+    "bemquery-selector-engine": "^0.2.1",
     "chai": "^3.5.0",
     "eslint": "^2.9.0",
     "in-publish": "^2.0.0",
