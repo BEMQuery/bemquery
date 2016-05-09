@@ -30,7 +30,10 @@
     "dist",
     "tonic-example.js"
   ],
-  "author": "Comandeer",
+  "author": {
+    "name": "BEMQuery team",
+    "url": "https://github.com/BEMQuery"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BEMQuery/bemquery/issues"
