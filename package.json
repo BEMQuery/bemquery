@@ -47,7 +47,7 @@
     "in-publish": "^2.0.0",
     "ink-docstrap": "^1.2.1",
     "jsdoc": "^3.4.0",
-    "karma": "^0.13.22",
+    "karma": "^1.0.0",
     "karma-chrome-launcher": "^1.0.1",
     "karma-coverage": "^1.0.0",
     "karma-firefox-launcher": "^1.0.0",
