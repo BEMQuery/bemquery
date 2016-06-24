@@ -5,7 +5,7 @@ const packageInfo = require( '../../package.json' );
 
 export default {
 	entry: 'src/index.js',
-	format: 'es6',
+	format: 'es',
 	sourceMap: true,
 	plugins: [
 		nodeResolve( {
