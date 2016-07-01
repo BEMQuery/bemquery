@@ -48,7 +48,7 @@
     "bemquery-selector-converter": "^0.1.1",
     "bemquery-selector-engine": "^0.2.1",
     "chai": "^3.5.0",
-    "eslint": "^2.12.0",
+    "eslint": "^3.0.0",
     "in-publish": "^2.0.0",
     "ink-docstrap": "^1.2.1",
     "jsdoc": "^3.4.0",
