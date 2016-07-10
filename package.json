@@ -8,8 +8,6 @@
     "lint": "eslint -c config/eslint/default.json src/**/*.js tests/**/*.js",
     "pretest": "npm run lint",
     "test": "karma start config/karma/default.js",
-    "pretest-ci": "npm run pretest",
-    "test-ci": "karma start config/karma/ci.js",
     "prebuild": "npm test",
     "build": "rollup -c config/rollup/umd.js && rollup -c config/rollup/es6.js && rollup -c config/rollup/es5.js",
     "build-docs": "jsdoc -c config/jsdoc/default.json ./src",
