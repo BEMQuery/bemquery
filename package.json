@@ -1,6 +1,6 @@
 {
   "name": "bemquery",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "BEMQuery library",
   "main": "dist/bemquery.umd.js",
   "jsnext:main": "dist/bemquery.js",
