@@ -39,7 +39,8 @@
   "homepage": "https://github.com/BEMQuery/bemquery-package-boilerplate#readme",
   "tonicExampleFilename": "tonic-example.js",
   "devDependencies": {
-    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-plugin-external-helpers": "^6.8.0",
+    "babel-preset-es2015": "^6.13.2",
     "chai": "^3.5.0",
     "eslint": "^3.0.1",
     "in-publish": "^2.0.0",
