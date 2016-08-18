@@ -1,6 +1,6 @@
 # bemquery-package-boilerplate
 
-[![Build Status](https://travis-ci.org/BEMQuery/bemquery-package-boilerplate.svg?branch=master)](https://travis-ci.org/BEMQuery/bemquery-package-boilerplate) [![Dependency Status](https://david-dm.org/BEMQuery/bemquery-package-boilerplate.svg)](https://david-dm.org/BEMQuery/bemquery-package-boilerplate) [![devDependency Status](https://david-dm.org/BEMQuery/bemquery-package-boilerplate/dev-status.svg)](https://david-dm.org/BEMQuery/bemquery-package-boilerplate#info=devDependencies)
+[![Build Status](https://travis-ci.org/BEMQuery/bemquery-package-boilerplate.svg?branch=master)](https://travis-ci.org/BEMQuery/bemquery-package-boilerplate) [![Dependency Status](https://david-dm.org/BEMQuery/bemquery-package-boilerplate.svg)](https://david-dm.org/BEMQuery/bemquery-package-boilerplate) [![devDependency Status](https://david-dm.org/BEMQuery/bemquery-package-boilerplate/dev-status.svg)](https://david-dm.org/BEMQuery/bemquery-package-boilerplate#info=devDependencies) [![Known Vulnerabilities](https://snyk.io/test/github/bemquery/bemquery-package-boilerplate/badge.svg)](https://snyk.io/test/github/bemquery/bemquery-package-boilerplate)
 
 Simple boilerplate
 
