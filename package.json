@@ -12,8 +12,8 @@
     "build": "rollup -c config/rollup/umd.js && rollup -c config/rollup/es6.js && rollup -c config/rollup/es5.js",
     "build-docs": "jsdoc -c config/jsdoc/default.json ./src",
     "publish-docs": "npm run build-docs && git checkout gh-pages && ncp docs/dist ./ && git add -A && git commit -m \"[ci skip] Updated docs.\" && git push origin gh-pages && git checkout master",
-    "preversion": "npm test",
-    "postversion": "git push origin && git push origin --tags",
+	"preversion": "npm run build && git add -f dist/",
+    "postversion": "git rm -r --cached dist/ && git commit -m \"[ci skip] Cleaning after release.\" && git push origin && git push origin --tags",
     "prepublish": "in-publish && npm run build || exit 0"
   },
   "repository": {
