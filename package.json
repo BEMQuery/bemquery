@@ -9,6 +9,7 @@
     "pretest": "npm run lint",
     "test": "karma start config/karma/default.js",
     "precommit": "npm test",
+	"commitmsg": "commitplease",
     "prebuild": "npm test",
     "build": "rollup -c config/rollup/umd.js && rollup -c config/rollup/es6.js && rollup -c config/rollup/es5.js",
     "build-docs": "jsdoc -c config/jsdoc/default.json ./src",
@@ -17,6 +18,14 @@
     "postversion": "git rm -r --cached dist/ && git commit -m \"[ci skip] Cleaning after release.\" && git push origin && git push origin --tags",
     "prepublish": "in-publish && npm run build || exit 0"
   },
+  "commitplease": {
+    "nohook": true,
+    "style": "angular",
+    "types": [
+      "feat", "fix", "docs", "style", "refactor", "perf", "test", "chore"
+    ],
+    "scope": "\\S+.*"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BEMQuery/bemquery-package-boilerplate.git"
@@ -43,6 +52,7 @@
     "babel-plugin-external-helpers": "^6.8.0",
     "babel-preset-es2015": "^6.13.2",
     "chai": "^3.5.0",
+    "commitplease": "^2.7.2",
     "cz-conventional-changelog": "^1.2.0",
     "docdash": "^0.4.0",
     "eslint": "^3.0.1",
