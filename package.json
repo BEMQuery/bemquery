@@ -60,7 +60,7 @@
     "lolex": "^1.4.0",
     "mocha": "^3.0.2",
     "ncp": "^2.0.0",
-    "rollup": "^0.34.0",
+    "rollup": "^0.35.10",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^3.0.0",
     "rollup-plugin-mockr": "^1.0.1",
