@@ -8,14 +8,24 @@
     "lint": "eslint -c config/eslint/default.json src/**/*.js tests/**/*.js",
     "pretest": "npm run lint",
     "test": "karma start config/karma/default.js",
+    "precommit": "npm test",
+	"commitmsg": "commitplease .git/COMMIT_EDITMSG",
     "prebuild": "npm test",
     "build": "rollup -c config/rollup/umd.js && rollup -c config/rollup/es6.js && rollup -c config/rollup/es5.js",
     "build-docs": "jsdoc -c config/jsdoc/default.json ./src",
     "publish-docs": "npm run build-docs && git checkout gh-pages && ncp docs/dist ./ && git add -A && git commit -m \"[ci skip] Updated docs.\" && git push origin gh-pages && git checkout master",
-    "preversion": "npm test",
-    "postversion": "git push origin && git push origin --tags",
+    "preversion": "npm run build && git add -f dist/",
+    "postversion": "git rm -r --cached dist/ && git commit -m \"[ci skip] Cleaning after release.\" && git push origin && git push origin --tags",
     "prepublish": "in-publish && npm run build || exit 0"
   },
+  "commitplease": {
+    "nohook": true,
+    "style": "angular",
+    "types": [
+      "feat", "fix", "docs", "style", "refactor", "perf", "test", "chore"
+    ],
+    "scope": "\\S+.*"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BEMQuery/bemquery.git"
@@ -47,13 +57,16 @@
     "bemquery-selector-converter": "^0.1.1",
     "bemquery-selector-engine": "^0.2.1",
     "chai": "^3.5.0",
+    "commitplease": "^2.7.2",
+    "cz-conventional-changelog": "^1.2.0",
+    "docdash": "^0.4.0",
     "eslint": "^3.0.1",
+    "husky": "^0.11.7",
     "in-publish": "^2.0.0",
-    "ink-docstrap": "^1.2.1",
     "is-travis": "^1.0.0",
     "jsdoc": "^3.4.0",
     "karma": "^1.0.0",
-    "karma-chrome-launcher": "^1.0.1",
+    "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.0.0",
     "karma-firefox-launcher": "^1.0.0",
     "karma-fixture": "^0.2.6",
@@ -65,14 +78,19 @@
     "lolex": "^1.4.0",
     "mocha": "^3.0.2",
     "ncp": "^2.0.0",
-    "rollup": "^0.34.0",
+    "rollup": "^0.35.10",
     "rollup-plugin-babel": "^2.6.1",
-    "rollup-plugin-commonjs": "^3.0.0",
+    "rollup-plugin-commonjs": "^5.0.0",
     "rollup-plugin-mockr": "^1.0.1",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.0",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
     "uglify-js": "^2.6.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

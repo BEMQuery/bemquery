@@ -1,0 +1,26 @@
+{
+  "name": "bemquery-package-boilerplate",
+  "description": "BEMQuery",
+  "main": "dist/bemquery-package-boilerplate.umd.js",
+  "authors": [
+      {
+        "name": "BEMQuery team",
+        "url": "https://github.com/BEMQuery"
+      }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "BEM",
+    "BEMQuery"
+  ],
+  "homepage": "https://github.com/BEMQuery/bemquery-package-boilerplate",
+  "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests",
+      "tonic-example.js",
+      "src"
+  ]
+}

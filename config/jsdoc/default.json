@@ -1,16 +1,14 @@
 {
 	"opts": {
-		"template": "./node_modules/ink-docstrap/template",
+		"template": "./node_modules/docdash",
 		"encoding": "utf8",
 		"destination": "./docs/dist",
 		"recurse": true,
 		"tutorials": "./docs/tutorials",
 		"readme": "./README.md"
 	},
-	"templates": {
-		"systemName": "bemquery",
-		"copyright": "Copyright © 2016 by <a href=\"https://github.com/BEMQuery\">BEMQUery</a>",
-		"theme": "cerulean",
-		"inverseNav": true
+	"docdash": {
+		"static": true,
+		"sort": true
 	}
 }
