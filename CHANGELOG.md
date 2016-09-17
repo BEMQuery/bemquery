@@ -4,7 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 ---
-## [Unreleased]
+## [0.1.4]
+### Added
+* Ability to install package via [Bower](https://bower.io/).
+
 ### Changed
 * Changelog is now compliant with [Keep a Changelog](http://keepachangelog.com/) format.
 
@@ -39,7 +42,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 * First working version.
 
-[Unreleased]: https://github.com/BEMQuery/bemquery/compare/v0.1.3...HEAD
+[0.1.4]: https://github.com/BEMQuery/bemquery/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/BEMQuery/bemquery/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/BEMQuery/bemquery/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/BEMQuery/bemquery/compare/v0.1.0...v0.1.1
