@@ -61,7 +61,7 @@
     "bemquery-async-dom": "^0.1.1",
     "bemquery-core": "^0.1.1",
     "bemquery-dom-events": "^0.1.0",
-    "bemquery-selector-converter": "^0.1.1",
+    "bemquery-selector-converter": "^0.1.5",
     "bemquery-selector-engine": "^0.2.1",
     "chai": "^3.5.0",
     "commitplease": "^2.7.2",
