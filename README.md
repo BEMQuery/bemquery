@@ -8,8 +8,14 @@ BEMQuery library.
 
 ## Installation
 
+You can install this package from npm:
 ```bash
 npm install bemquery [--save]
+```
+
+You can also install it from bower:
+```bash
+bower install bemquery-package-boilerplate
 ```
 
 ## Documentation
