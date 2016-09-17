@@ -15,7 +15,7 @@ npm install bemquery [--save]
 
 You can also install it from bower:
 ```bash
-bower install bemquery-package-boilerplate
+bower install bemquery
 ```
 
 ## Documentation
