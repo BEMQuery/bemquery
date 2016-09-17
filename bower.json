@@ -1,7 +1,7 @@
 {
-  "name": "bemquery-package-boilerplate",
-  "description": "BEMQuery",
-  "main": "dist/bemquery-package-boilerplate.umd.js",
+  "name": "bemquery",
+  "description": "BEMQuery library",
+  "main": "dist/bemquery.umd.js",
   "authors": [
       {
         "name": "BEMQuery team",
@@ -13,7 +13,7 @@
     "BEM",
     "BEMQuery"
   ],
-  "homepage": "https://github.com/BEMQuery/bemquery-package-boilerplate",
+  "homepage": "https://github.com/BEMQuery/bemquery",
   "ignore": [
       "**/.*",
       "node_modules",
