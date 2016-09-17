@@ -1,6 +1,6 @@
 {
   "name": "bemquery",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "BEMQuery library",
   "main": "dist/bemquery.umd.js",
   "jsnext:main": "dist/bemquery.js",
@@ -9,7 +9,7 @@
     "pretest": "npm run lint",
     "test": "karma start config/karma/default.js",
     "precommit": "npm test",
-	"commitmsg": "commitplease .git/COMMIT_EDITMSG",
+    "commitmsg": "commitplease .git/COMMIT_EDITMSG",
     "prebuild": "npm test",
     "build": "rollup -c config/rollup/umd.js && rollup -c config/rollup/es6.js && rollup -c config/rollup/es5.js",
     "build-docs": "jsdoc -c config/jsdoc/default.json ./src",
@@ -22,10 +22,17 @@
     "nohook": true,
     "style": "angular",
     "types": [
-      "feat", "fix", "docs", "style", "refactor", "perf", "test", "chore"
+      "feat",
+      "fix",
+      "docs",
+      "style",
+      "refactor",
+      "perf",
+      "test",
+      "chore"
     ],
     "scope": "\\S+.*"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BEMQuery/bemquery.git"
