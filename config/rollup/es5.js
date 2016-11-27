@@ -12,7 +12,7 @@ config.plugins.push( babel( {
 } ) );
 config.plugins.push( uglify( {
 	comments: '/^/*!/',
-	'source-map': './dist/${packageInfo.name}.es5.js.map'
+	'source-map': `./dist/${packageInfo.name}.es5.js.map`
 } ) );
 
 config.dest = `dist/${packageInfo.name}.es5.js`;
