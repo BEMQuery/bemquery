@@ -9,7 +9,7 @@
     "pretest": "npm run lint",
     "test": "karma start config/karma/default.js",
     "precommit": "npm test",
-	"commitmsg": "commitplease .git/COMMIT_EDITMSG",
+    "commitmsg": "commitplease .git/COMMIT_EDITMSG",
     "prebuild": "npm test",
     "build": "rollup -c config/rollup/umd.js && rollup -c config/rollup/es6.js && rollup -c config/rollup/es5.js",
     "build-docs": "jsdoc -c config/jsdoc/default.json ./src",
@@ -35,7 +35,7 @@
       "revert"
     ],
     "scope": "\\S+.*"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BEMQuery/bemquery-package-boilerplate.git"
