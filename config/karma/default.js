@@ -1,8 +1,3 @@
-// Karma configuration
-// Generated on Sun Mar 20 2016 23:19:01 GMT+0100 (CET)
-
-const isTravis = require( 'is-travis' );
-
 module.exports = function( config ) {
 	config.set( {
 		failOnEmptyTestSuite: false,
@@ -70,9 +65,7 @@ module.exports = function( config ) {
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers: isTravis ? [
-			'Firefox'
-		] : [
+		browsers: [
 			'Chrome',
 			'Firefox'
 		],

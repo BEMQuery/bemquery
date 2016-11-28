@@ -68,7 +68,6 @@
     "eslint": "^3.0.1",
     "husky": "^0.11.7",
     "in-publish": "^2.0.0",
-    "is-travis": "^1.0.0",
     "jsdoc": "^3.4.0",
     "karma": "^1.0.0",
     "karma-chrome-launcher": "^2.0.0",
