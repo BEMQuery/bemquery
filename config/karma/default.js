@@ -41,6 +41,7 @@ module.exports = function( config ) {
 		// possible values: 'dots', 'progress'
 		// available reporters: https://npmjs.org/browse/keyword/karma-reporter
 		reporters: [
+			'progress',
 			'coverage'
 		],
 
@@ -102,7 +103,10 @@ module.exports = function( config ) {
 		},
 
 		coverageReporter: {
-			type: 'text-summary'
+			reporters: [
+				{ type: 'text-summary' },
+				{ type: 'lcovonly' }
+			]
 		}
 	} );
 };
