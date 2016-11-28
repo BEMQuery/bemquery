@@ -31,7 +31,7 @@ module.exports = function( config ) {
 		// preprocess matching files before serving them to the browser
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 		preprocessors: {
-			'tests/**/*.js': [ 'rollup', 'coverage' ],
+			'tests/**/*.js': [ 'rollup' ],
 			'tests/support/fixtures/**/*.html': [ 'html2js' ],
 			'tests/support/fixtures/**/*.json': [ 'json_fixtures' ]
 		},
@@ -41,7 +41,6 @@ module.exports = function( config ) {
 		// possible values: 'dots', 'progress'
 		// available reporters: https://npmjs.org/browse/keyword/karma-reporter
 		reporters: [
-			'progress',
 			'coverage'
 		],
 
@@ -82,6 +81,9 @@ module.exports = function( config ) {
 		rollupPreprocessor: {
 			rollup: {
 				plugins: [
+					require( 'rollup-plugin-istanbul' )( {
+						exclude: [ 'tests/**/*.js' ]
+				    } ),
 					require( 'rollup-plugin-mockr' )( require( '../mockr/default' ) ),
 					require( 'rollup-plugin-commonjs' )(),
 					require( 'rollup-plugin-node-resolve' )( {
