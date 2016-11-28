@@ -31,7 +31,7 @@ module.exports = function( config ) {
 		// preprocess matching files before serving them to the browser
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 		preprocessors: {
-			'tests/**/*.js': [ 'rollup', 'coverage' ],
+			'tests/**/*.js': [ 'rollup' ],
 			'tests/support/fixtures/**/*.html': [ 'html2js' ],
 			'tests/support/fixtures/**/*.json': [ 'json_fixtures' ]
 		},
@@ -82,6 +82,9 @@ module.exports = function( config ) {
 		rollupPreprocessor: {
 			rollup: {
 				plugins: [
+					require( 'rollup-plugin-istanbul' )( {
+						exclude: [ 'tests/**/*.js' ]
+				    } ),
 					require( 'rollup-plugin-mockr' )( require( '../mockr/default' ) ),
 					require( 'rollup-plugin-commonjs' )(),
 					require( 'rollup-plugin-node-resolve' )( {
@@ -100,7 +103,10 @@ module.exports = function( config ) {
 		},
 
 		coverageReporter: {
-			type: 'text-summary'
+			reporters: [
+				{ type: 'text-summary' },
+				{ type: 'lcovonly' }
+			]
 		}
 	} );
 };
