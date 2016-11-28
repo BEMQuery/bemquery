@@ -1,5 +1,12 @@
+sudo: required
+dist: trusty
 addons:
   firefox: latest
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 language: node_js
 node_js:
   - '4'
@@ -9,3 +16,4 @@ before_script:
   - 'sh -e /etc/init.d/xvfb start'
   - 'export DISPLAY=:99.0'
 script: npm run build
+after_success: npm run coverage
