@@ -80,22 +80,18 @@ module.exports = function( config ) {
 		concurrency: 1,
 
 		rollupPreprocessor: {
-			rollup: {
-				plugins: [
-					require( 'rollup-plugin-istanbul' )( {
-						exclude: [ 'tests/**/*.js' ]
-				    } ),
-					require( 'rollup-plugin-mockr' )( require( '../mockr/default' ) ),
-					require( 'rollup-plugin-commonjs' )(),
-					require( 'rollup-plugin-node-resolve' )( {
-						jsnext: true,
-						main: false
-					} )
-				]
-			},
-			bundle: {
-				format: 'iife'
-			}
+			plugins: [
+				require( 'rollup-plugin-istanbul' )( {
+					exclude: [ 'tests/**/*.js' ]
+				} ),
+				require( 'rollup-plugin-mockr' )( require( '../mockr/default' ) ),
+				require( 'rollup-plugin-commonjs' )(),
+				require( 'rollup-plugin-node-resolve' )( {
+					jsnext: true,
+					main: false
+				} )
+			],
+			format: 'iife'
 		},
 
 		jsonFixturesPreprocessor: {
