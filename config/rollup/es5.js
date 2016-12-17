@@ -13,8 +13,9 @@ config.plugins[ 2 ] = babel( {
 } );
 
 config.plugins.push( uglify( {
-	comments: '/^/*!/',
-	'source-map': `./dist/${packageInfo.name}.es5.js.map`
+	output: {
+		preamble: config.banner
+	}
 } ) );
 
 config.dest = `dist/${packageInfo.name}.es5.js`;
