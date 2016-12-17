@@ -61,6 +61,7 @@
   "tonicExampleFilename": "tonic-example.js",
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.8.0",
+    "babel-preset-babili": "0.0.9",
     "babel-preset-es2015": "^6.13.2",
     "chai": "^3.5.0",
     "codecov": "^1.0.1",

@@ -1,5 +1,6 @@
 import nodeResolve from 'rollup-plugin-node-resolve';
 import convertCJS from 'rollup-plugin-commonjs';
+import babel from 'rollup-plugin-babel';
 
 const packageInfo = require( '../../package.json' );
 
@@ -12,7 +13,14 @@ export default {
 			jsnext: true,
 			main: false
 		} ),
-		convertCJS()
+		convertCJS(),
+		babel( {
+			presets: [
+				[ 'babili' ]
+			],
+			plugins: [ 'external-helpers' ],
+			comments: false
+		} )
 	],
 	banner: `/*! ${packageInfo.name} v${packageInfo.version} | (c) ${new Date().getFullYear()} ${packageInfo.author.name} | ${packageInfo.license} license (see LICENSE) */`,
 	dest: `dist/${packageInfo.name}.js`
