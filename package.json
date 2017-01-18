@@ -61,7 +61,6 @@
   "tonicExampleFilename": "tonic-example.js",
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.8.0",
-    "babel-preset-babili": "0.0.9",
     "babel-preset-es2015": "^6.13.2",
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
@@ -91,7 +90,8 @@
     "rollup-plugin-istanbul": "^1.1.0",
     "rollup-plugin-mockr": "^1.0.1",
     "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-plugin-uglify": "^1.0.0",
+    "rollup-plugin-real-babili": "^1.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
     "uglify-js": "^2.6.2"
