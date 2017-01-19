@@ -3,7 +3,7 @@ import convertCJS from 'rollup-plugin-commonjs';
 import babili from 'rollup-plugin-real-babili';
 
 const packageInfo = require( '../../package.json' );
-const banner = `/*! ${packageInfo.name} v${packageInfo.version} | (c) ${new Date().getFullYear()} ${packageInfo.author.name} | ${packageInfo.license} license (see LICENSE) */`;
+const banner = `/*! ${packageInfo.name} v${packageInfo.version} | (c) 2016-${new Date().getFullYear()} ${packageInfo.author.name} | ${packageInfo.license} license (see LICENSE) */`;
 
 export default {
 	entry: 'src/index.js',
