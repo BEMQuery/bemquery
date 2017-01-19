@@ -1,6 +1,6 @@
 import nodeResolve from 'rollup-plugin-node-resolve';
 import convertCJS from 'rollup-plugin-commonjs';
-import babili from 'rollup-plugin-real-babili';
+import babili from 'rollup-plugin-babili';
 
 const packageInfo = require( '../../package.json' );
 const banner = `/*! ${packageInfo.name} v${packageInfo.version} | (c) 2016-${new Date().getFullYear()} ${packageInfo.author.name} | ${packageInfo.license} license (see LICENSE) */`;
