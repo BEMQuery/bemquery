@@ -4,6 +4,7 @@
   "description": "BEMQuery",
   "main": "dist/bemquery-package-boilerplate.umd.js",
   "jsnext:main": "dist/bemquery-package-boilerplate.js",
+  "module": "dist/bemquery-package-boilerplate.js",
   "scripts": {
     "lint": "eslint -c config/eslint/default.json src/**/*.js tests/**/*.js",
     "pretest": "npm run lint",
