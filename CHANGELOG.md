@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 ---
+
+## [0.1.6] – 2017-01-27
+### Added
+* Minification of ES6 code using [Babili](https://github.com/babel/babili).
+
 ## [0.1.5]
 ### Fixed
 * Fixed not working Bower distribution.
@@ -46,6 +51,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 * First working version.
 
+[0.1.6]: https://github.com/BEMQuery/bemquery/compare/v0.1.5...v0.1.6
 [0.1.5]: https://github.com/BEMQuery/bemquery/compare/v0.1.4...v0.1.5
 [0.1.4]: https://github.com/BEMQuery/bemquery/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/BEMQuery/bemquery/compare/v0.1.2...v0.1.3
