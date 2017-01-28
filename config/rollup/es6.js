@@ -1,8 +1,9 @@
 import nodeResolve from 'rollup-plugin-node-resolve';
 import convertCJS from 'rollup-plugin-commonjs';
-import babel from 'rollup-plugin-babel';
+import babili from 'rollup-plugin-babili';
 
 const packageInfo = require( '../../package.json' );
+const banner = `/*! ${packageInfo.name} v${packageInfo.version} | (c) 2016-${new Date().getFullYear()} ${packageInfo.author.name} | ${packageInfo.license} license (see LICENSE) */`;
 
 export default {
 	entry: 'src/index.js',
@@ -14,14 +15,11 @@ export default {
 			main: false
 		} ),
 		convertCJS(),
-		babel( {
-			presets: [
-				[ 'babili' ]
-			],
-			plugins: [ 'external-helpers' ],
-			comments: false
+		babili( {
+			comments: false,
+			banner
 		} )
 	],
-	banner: `/*! ${packageInfo.name} v${packageInfo.version} | (c) ${new Date().getFullYear()} ${packageInfo.author.name} | ${packageInfo.license} license (see LICENSE) */`,
+	banner,
 	dest: `dist/${packageInfo.name}.js`
 };
