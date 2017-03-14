@@ -69,7 +69,7 @@
     "bemquery-selector-converter": "^0.1.1",
     "bemquery-selector-engine": "^0.2.1",
     "chai": "^3.5.0",
-    "codecov": "^1.0.1",
+    "codecov": "^2.0.1",
     "commitplease": "^2.7.2",
     "cz-conventional-changelog": "^1.2.0",
     "docdash": "^0.4.0",
