@@ -64,7 +64,7 @@
     "babel-plugin-external-helpers": "^6.8.0",
     "babel-preset-es2015": "^6.13.2",
     "bemquery-async-dom": "^0.1.1",
-    "bemquery-core": "^0.1.1",
+    "bemquery-core": "^0.1.2",
     "bemquery-dom-events": "^0.1.0",
     "bemquery-selector-converter": "^0.1.1",
     "bemquery-selector-engine": "^0.2.1",
