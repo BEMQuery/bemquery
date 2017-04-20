@@ -62,7 +62,7 @@
   "tonicExampleFilename": "tonic-example.js",
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.8.0",
-    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-es2015": "^6.16.0",
     "bemquery-async-dom": "^0.1.1",
     "bemquery-core": "^0.1.1",
     "bemquery-dom-events": "^0.1.0",
