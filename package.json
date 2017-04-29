@@ -70,7 +70,7 @@
     "bemquery-selector-engine": "^0.2.1",
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
-    "commitplease": "^2.7.2",
+    "commitplease": "^2.7.10",
     "cz-conventional-changelog": "^1.2.0",
     "docdash": "^0.4.0",
     "eslint": "^3.0.1",
