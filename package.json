@@ -78,7 +78,7 @@
     "in-publish": "^2.0.0",
     "jsdoc": "^3.4.0",
     "karma": "^1.0.0",
-    "karma-chrome-launcher": "^2.0.0",
+    "karma-chrome-launcher": "^2.1.0",
     "karma-coverage": "^1.1.1",
     "karma-firefox-launcher": "^1.0.0",
     "karma-fixture": "^0.2.6",
