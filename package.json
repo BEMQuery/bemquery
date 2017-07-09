@@ -90,7 +90,7 @@
     "lolex": "^1.4.0",
     "mocha": "^3.0.2",
     "ncp": "^2.0.0",
-    "rollup": "^0.41.1",
+    "rollup": "^0.43.1",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^7.0.0",
     "rollup-plugin-istanbul": "^1.1.0",
