@@ -76,7 +76,7 @@
     "eslint": "^3.0.1",
     "husky": "^0.13.1",
     "in-publish": "^2.0.0",
-    "jsdoc": "^3.4.0",
+    "jsdoc": "^3.5.0",
     "karma": "^1.0.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",
