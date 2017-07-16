@@ -100,7 +100,7 @@
     "rollup-plugin-uglify": "^1.0.1",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
-    "uglify-js": "^2.6.2"
+    "uglify-js": "^3.0.25"
   },
   "config": {
     "commitizen": {
