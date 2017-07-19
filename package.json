@@ -87,7 +87,7 @@
     "karma-mocha": "^1.0.1",
     "karma-rollup-preprocessor": "^3.0.1",
     "karma-sinon-chai": "^1.2.0",
-    "lolex": "^1.4.0",
+    "lolex": "^2.1.1",
     "mocha": "^3.0.2",
     "ncp": "^2.0.0",
     "rollup": "^0.41.1",
