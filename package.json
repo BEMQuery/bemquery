@@ -99,7 +99,7 @@
     "rollup-plugin-babili": "^1.0.3",
     "rollup-plugin-uglify": "^1.0.1",
     "sinon": "^1.17.4",
-    "sinon-chai": "^2.8.0",
+    "sinon-chai": "^2.13.0",
     "uglify-js": "^2.6.2"
   },
   "config": {
