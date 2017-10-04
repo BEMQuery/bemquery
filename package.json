@@ -98,7 +98,7 @@
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-babili": "^1.0.3",
     "rollup-plugin-uglify": "^1.0.1",
-    "sinon": "^1.17.4",
+    "sinon": "^4.0.1",
     "sinon-chai": "^2.8.0",
     "uglify-js": "^2.6.2"
   },
